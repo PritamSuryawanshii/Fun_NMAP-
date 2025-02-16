@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Web Interface | Pritam</title>
+</head>
+<body>
+    <h1>Nmap Web Interface</h1>
+    <form action="/scan" method="post">
+        <label for="target">Target IP/Range:</label><br>
+        <input type="text" id="target" name="target" required><br><br>
+
+        <label for="scan_type">Scan Type:</label><br>
+        <select id="scan_type" name="scan_type" required>
+            <option value="ping_scan">Ping Scan</option>
+            <option value="port_scan">Port Scan</option>
+            <option value="quick_scan">Quick Scan</option>
+            <option value="service_scan">Service and Version Detection</option>
+            <option value="os_scan">Operating System Detection</option>
+        </select><br><br>
+
+        <button type="submit">Start Scan</button>
+    </form>
+</body>
+</html>
